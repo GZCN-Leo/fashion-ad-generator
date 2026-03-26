@@ -202,18 +202,17 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-with st.expander("How it works", expanded=False):
+with st.expander("How to use", expanded=False):
     st.markdown(
         """
-        Given a product image, the system runs **three pipelines** in sequence:
+        This app helps you quickly generate marketing content for your products:
 
-        | Step | Pipeline | Model |
-        |------|----------|-------|
-        | 1 | **Image Classification** | Fine-tuned ViT |
-        | 2 | **Image Captioning** | BLIP (zero-shot) |
-        | 3 | **Ad Copy Generation** | Qwen2.5-0.5B-Instruct (few-shot) |
+        1. **Product Category** — automatically identifies what type of product it is.
+        2. **Product Description** — generates a concise description of the product.
+        3. **Ad Copy** — creates a one-sentence advertisement ready for your listing.
 
-        **Categories supported:** Apparel · Footwear · Accessories · Personal Care
+        **Getting started:** Upload a clear product image below, then click **Generate**.
+        For best results, use a photo with a plain background.
         """
     )
 
