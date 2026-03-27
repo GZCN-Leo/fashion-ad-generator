@@ -213,6 +213,9 @@ with st.expander("How to use", expanded=False):
 
         **Getting started:** Upload a clear product image below, then click **Generate**.
         For best results, use a photo with a plain background.
+
+        **Current support:** This app currently supports 4 categories only:
+        Apparel, Accessories, Footwear, and Personal Care.
         """
     )
 
