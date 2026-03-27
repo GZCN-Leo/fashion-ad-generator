@@ -2,7 +2,7 @@
 Streamlit app – Fashion Product Ad Generator
 
 Pipelines (from DL_Project_V3.0):
-  1. Image Classification   – Fine-tuned ViT  (Leoinhouse/vit-finetuned-fashion)
+  1. Image Classification   – Fine-tuned ViT  (Leoinhouse/ImagineClassification-finetuned-model)
   2. Image Captioning       – BLIP            (Salesforce/blip-image-captioning-base)
   3. Ad Copy Generation     – Qwen2.5-0.5B   (Qwen/Qwen2.5-0.5B-Instruct)
 
@@ -36,7 +36,7 @@ from transformers import (
 # ──────────────────────────────────────────────
 # Configuration
 # ──────────────────────────────────────────────
-VIT_MODEL_ID = "Leoinhouse/vit-finetuned-fashion"
+VIT_MODEL_ID = "Leoinhouse/ImagineClassification-finetuned-model"
 BLIP_MODEL_ID = "Salesforce/blip-image-captioning-base"
 QWEN_MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
 
@@ -287,7 +287,7 @@ if generate_clicked and uploaded_file is not None:
 
     st.divider()
     st.caption(
-        "Models: ViT (Leoinhouse/vit-finetuned-fashion) · "
+        "Models: ViT (Leoinhouse/ImagineClassification-finetuned-model) · "
         "BLIP (Salesforce/blip-image-captioning-base) · "
         "Qwen2.5-0.5B-Instruct"
     )
