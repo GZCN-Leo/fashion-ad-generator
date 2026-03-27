@@ -6,7 +6,7 @@ A Streamlit web app that automatically generates **product category**, **descrip
 
 | Step | Task | Model | Source |
 |------|------|-------|--------|
-| 1 | Image Classification | Fine-tuned ViT | [Leoinhouse/vit-finetuned-fashion](https://huggingface.co/Leoinhouse/vit-finetuned-fashion) |
+| 1 | Image Classification | Fine-tuned ViT | [Leoinhouse/ImagineClassification-finetuned-model](https://huggingface.co/Leoinhouse/ImagineClassification-finetuned-model) |
 | 2 | Image Captioning | BLIP (zero-shot) | [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base) |
 | 3 | Ad Copy Generation | Qwen2.5-0.5B-Instruct (few-shot) | [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) |
 
@@ -33,7 +33,7 @@ streamlit run app.py
 
 ## Project Context
 
-This app is built as part of the **ISOM 5240 Deep Learning Business Applications with Python** course project. The ViT classification model was fine-tuned on the [Fashion Product Images (Small)](https://huggingface.co/datasets/ashraq/fashion-product-images-small) dataset with balanced sampling across 4 categories (2 000 images each).
+This app is built as part of the **ISOM 5240 Deep Learning Business Applications with Python** course project. The ViT classifier is loaded from [Leoinhouse/ImagineClassification-finetuned-model](https://huggingface.co/Leoinhouse/ImagineClassification-finetuned-model), fine-tuned on the [Fashion Product Images (Small)](https://huggingface.co/datasets/ashraq/fashion-product-images-small) dataset with balanced sampling across 4 categories (2 000 images each).
 
 ## License
 
